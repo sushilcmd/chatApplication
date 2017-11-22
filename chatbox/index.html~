@@ -1,0 +1,48 @@
+<html>
+<title>
+    RealBox ChatBox
+</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="indexStyle.less">
+    <link rel="stylesheet" type="text/css" href="screen.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="loginSection">
+            <div class="realBoxSection">
+                <div class="logo">
+                    <img src="images/logo.png" class="logoImg">
+                </div>
+                <div class="textRealBox">
+                    <font class="Text">
+                        2017<br> Real Solution in Box
+                    </font>
+                </div>
+            </div>
+
+            <div class="userInfo">
+                <div class="logo">
+                    <img src="images/user.png" class="userImg">
+                </div>
+                <div class="textRealBox">
+                    <div class="textBox">
+                        <input type="text" id="userName" placeholder="Enter User Name" class="inputBox">
+                    </div>
+			
+			<a href="chat_design/chatPage.html">
+                    <div class="enterButton">
+                        <div class="enterText">ENTER</div>
+                    </div></div>
+                </div>
+
+
+            </div>
+        </div>
+
+</body>
+
+</html>

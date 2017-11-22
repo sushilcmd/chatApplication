@@ -1,0 +1,332 @@
+body{ margin: 0; padding: 0; }
+.container
+{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.leftPanel{
+  position: fixed;
+  height: 100%;
+  width: 35rem;
+  background:#34495e;
+  float: left;
+
+}
+.myProfileBlock
+{
+  position: absolute;
+  width: 34rem;
+  height: 8rem;
+  float: left;
+  left: 1%;
+  background: #2c3e50;
+  margin-top: 0.5rem;
+  transition: 0.2s;
+
+  .profileImage
+{
+  height: 4rem;
+  width: 12rem;
+  margin-top: 1rem;
+  margin-left: 9rem;
+  background: #ffffff;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+
+}
+.myProfileName
+{
+  position: relative;
+  line-height: 15rem;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.chatOption
+{
+  position: absolute;
+  float: left;
+  height: 3rem;
+  width: 28rem;
+  background: greenyellow;
+  line-height: 22rem;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+.privateChat
+{
+  width: 14rem;
+	height: 100%;
+	background: #2ecc71;
+  float: left;
+}
+.groupChat
+{
+  float: right;
+  right: 0;
+  width: 14rem;
+	height: 100%;
+	background: red;
+
+}
+.onlineUsers
+{
+  position: absolute;
+  float: left;
+  bottom: 0;
+  width: 97%;
+  top: 23rem;
+  overflow-y: scroll;
+}
+.User
+{
+  position: relative;
+  width: 98%;
+  float: left;
+  left: 1%;
+  height: 10rem;
+  background: #2c3e50;
+  margin-top: 0.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.User:hover
+{
+  background:#34495e;
+  border-left: 4px solid cornflowerblue;
+}
+
+.userOnlineImage
+{
+  position: absolute;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  top: 1rem;
+  left: 2rem;
+  border: 2px solid #ffffff;
+}
+.userOnlineName
+{
+  position: relative;
+  float: left;
+  left: 11.5rem;
+  padding-top: 1.2rem;
+  line-height: 7rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+.userStatusColor
+{
+  position: absolute;
+  float: right;
+  right: 2rem;
+  padding-top: 1.2rem;
+  line-height: 8rem;
+  font-size:1.7rem;
+  color:#2ecc71;
+}
+
+.chatPanel
+{
+  position: fixed;
+  height: 100%;
+  width: auto;
+  float: left;
+  left: 35.3rem;
+  right: 0%;
+}
+
+.userInfo
+{
+  position: fixed;
+  width: 100%;
+  height: 9.5rem;
+  background: #ecf0f1;
+  box-shadow: 0px 7px 7px -5px rgba(49, 50, 50, 0.6);
+  transition: 0.3s;
+
+
+}
+
+.userImg
+{
+  position: relative;
+  height: 7rem;
+  width: 7rem;
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #000000;
+  background-image: url("../images/user3.jpg");
+  transition: 0.3s;
+}
+
+
+.chatBoxWindow
+{
+  position: absolute;
+  height: 45rem;
+  width: 100%;
+  margin-top: 10rem;
+  background: #ffffff;
+  overflow-y: auto;
+  background: url("../images/chatBg.jpg");
+  }
+.reciverMessage
+{
+    display: block;
+    position: relative;
+    float: left;
+    padding-top: 0.70rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: #ffffff;
+    border-bottom-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    clear: both;
+    max-width:45rem;
+    font-size: 1.7rem;      
+    transition: 0.5s;
+    color: #000000;
+    box-shadow: 4px 4px 23px 0px rgba(49, 50, 50, 0.6);
+}
+
+.senderMessage
+{
+    display: block;
+    position: relative;
+    padding-top: 0.70rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 0rem;
+    background: #d7f2ed;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    clear: both;
+    max-width:45rem;
+    font-size: 1.7rem;
+     float:right;
+    margin-right:2rem;
+    transition: 0.5s;
+    box-shadow: 4px 4px 23px 0px rgba(49, 50, 50, 0.6);
+}
+
+.messageSender
+{
+  height: auto;
+  width: auto;
+  margin: 1.5rem;
+  float: right;
+  right: 0rem;
+  font-family: sans-serif;
+
+}
+.messageReciver
+{
+  height: auto;
+  width: auto;
+  margin-left: 1.5rem;
+  font-family: sans-serif;
+
+}
+.senderName
+{
+  position: relative;
+  font-size: 2rem;
+  color: cornflowerblue;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.reciverName
+{
+  position: relative;
+  font-size: 2rem;
+  color: blue;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem; 
+}
+.message{
+  position: relative;
+  text-align: justify;
+}
+
+
+.textBox
+{
+  position: absolute;
+  height: 9rem;
+  width: 100%;
+  bottom: 0rem;
+  background: green;
+
+  float: left;
+}
+
+.textAreaBox{
+  position: absolute;
+  float: left;
+  height: 9rem;
+  width: 80.5rem;
+  background: blueviolet;
+}
+
+textarea
+{
+  position: relative;
+  height: 6rem;
+  width: 77rem;
+  font-family: sans-serif;
+  font-size: 2rem;
+  resize: none;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  border: 1px solid black;
+}
+
+.btn{
+  position: absolute;
+  float: left;
+  height: 84%;
+  width: 9%;
+  right: 4rem;
+  top: 0.5rem;
+  font-size: 2rem;
+  background: blue;
+  border-radius: 50%;
+}
+.iconImage
+{
+  position: absolute;
+  padding-top: 10%;
+  font-size: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 0px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}

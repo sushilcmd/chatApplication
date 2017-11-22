@@ -1,0 +1,775 @@
+body {
+  margin: 0rem;
+  padding: 0rem;
+}
+.mainContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url('../images/bg.jpg');
+}
+.mainContainer .loginSection {
+  position: absolute;
+  height: 35rem;
+  width: 70rem;
+  background: rgba(0, 0, 0, 0.6);
+  margin-left: 19rem;
+  margin-top: 15.5rem;
+}
+.mainContainer .loginSection .realBoxSection {
+  position: absolute;
+  height: 100%;
+  width: 32rem;
+  background: #ffffff;
+}
+.mainContainer .loginSection .realBoxSection .logo {
+  position: relative;
+  width: 100%;
+  height: 18rem;
+  background: #ffffff;
+}
+.mainContainer .loginSection .realBoxSection .logo .logoImage {
+  position: absolute;
+  transform: translate(70%, 18%);
+}
+.mainContainer .loginSection .realBoxSection .textRealBox {
+  position: relative;
+  top: 4%;
+  height: 15.5rem;
+  background: #ffffff;
+  width: 100%;
+}
+.mainContainer .loginSection .realBoxSection .textRealBox .text {
+  position: absolute;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: regular 400;
+  color: #000000;
+  text-align: center;
+  margin-left: 6rem;
+  margin-top: 3rem;
+}
+.mainContainer .loginSection .userInfo {
+  position: absolute;
+  height: 100%;
+  width: 37rem;
+  right: 0%;
+}
+.mainContainer .loginSection .userInfo .userProfileImg {
+  position: relative;
+  width: 100%;
+  height: 18rem;
+  background: #ffffff;
+}
+.mainContainer .loginSection .userInfo .userProfileImg .userImage {
+  position: relative;
+  transform: translate(10rem, 2rem);
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  border: 5px solid rgba(241, 196, 15, 0.6);
+  cursor: pointer;
+}
+.mainContainer .loginSection .userInfo .screen {
+  position: relative;
+  top: 1.5rem;
+  height: 15.5rem;
+  background: #ffffff;
+  width: 100%;
+}
+.mainContainer .loginSection .userInfo .screen .textBox {
+  position: absolute;
+  float: left;
+  width: 100%;
+  height: 8rem;
+}
+.mainContainer .loginSection .userInfo .screen .textBox .inputBox {
+  position: relative;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+  height: 100%;
+  width: 100%;
+  font-size: 3rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+.mainContainer .loginSection .userInfo .screen .successfullMessage {
+  position: absolute;
+  float: left;
+  width: 100%;
+  height: 8rem;
+}
+.mainContainer .loginSection .userInfo .screen .successfullMessage .icon {
+  position: relative;
+  float: left;
+  left: 13rem;
+  font-size: 9rem;
+  color: rgba(241, 196, 15, 0.7);
+}
+.mainContainer .loginSection .userInfo .screen .enterButton {
+  position: absolute;
+  width: 100%;
+  margin-top: 9rem;
+  height: 6.5rem;
+  background: #ffffff;
+  cursor: pointer;
+}
+.mainContainer .loginSection .userInfo .screen .enterButton .nextScreen {
+  position: relative;
+  float: left;
+  left: 18rem;
+  font-size: 6rem;
+  line-height: 5rem;
+  color: rgba(52, 73, 94, 0.8);
+}
+.mainContainer .loginSection .userInfo .screen .enterButton .previousScreen {
+  position: relative;
+  float: left;
+  margin-left: 6rem;
+  font-size: 6rem;
+  line-height: 5rem;
+  color: rgba(52, 73, 94, 0.8);
+}
+.mainContainer .loginSection .userInfo .screen .enterButton .enterText {
+  position: relative;
+  float: left;
+  left: 6.5rem;
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+.mainContainer .detailsContainer {
+  position: absolute;
+  right: 16.5rem;
+  background: #ffffff;
+  margin-top: 15.5rem;
+}
+.mainContainer .detailsContainer .details {
+  position: relative;
+  height: 35rem;
+  width: 25rem;
+  background: #ffffff;
+}
+.mainContainer .detailsContainer .details .detailsStrip {
+  position: relative;
+  width: 100%;
+  height: 6.5rem;
+  background: rgba(241, 196, 15, 0.6);
+  line-height: 5rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: #ffffff;
+}
+.mainContainer .detailsContainer .details .info {
+  position: relative;
+  width: 100%;
+  height: 6.5rem;
+  margin-top: 0.6rem;
+}
+.mainContainer .detailsContainer .details .info .infoEditInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.mainContainer .detailsContainer .details .info .infoEditInner .infoData {
+  position: relative;
+  float: left;
+  height: 6rem;
+  width: 17.5rem;
+  font-size: 2.2rem;
+  color: black;
+  line-height: 5rem;
+  text-align: center;
+  font-family: sans-serif;
+}
+.mainContainer .detailsContainer .details .info .infoEditInner .infoEditButton {
+  position: relative;
+  float: right;
+  right: 0.5rem;
+  height: 5rem;
+  width: 5rem;
+  font-size: 2.2rem;
+  color: black;
+  line-height: 6rem;
+  text-align: center;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.mainContainer .detailsContainer .details .info .infoUpdateInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.mainContainer .detailsContainer .details .info .infoUpdateInner .infoUpdateData {
+  position: relative;
+  float: left;
+  height: 6rem;
+  width: 17.5rem;
+}
+.mainContainer .detailsContainer .details .info .infoUpdateInner .infoUpdateData .inputUpdate {
+  position: relative;
+  height: 6rem;
+  width: 100%;
+  border-bottom: 0.1rem solid #000000;
+  outline: none;
+  border-top: 0rem;
+  border-right: 0rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+.mainContainer .detailsContainer .details .info .infoUpdateInner .infoUpdateButton {
+  position: relative;
+  float: right;
+  right: 0.5rem;
+  height: 6.5rem;
+  width: 6rem;
+  font-size: 3.5rem;
+  color: #2ecc71;
+  line-height: 6rem;
+  text-align: center;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.mainContainer .avatarContainer {
+  position: absolute;
+  height: 100%;
+  width: 32rem;
+  background: #ffffff;
+  overflow: hidden;
+  overflow-y: auto;
+  display: none;
+}
+.mainContainer .avatarContainer .avatarRow {
+  position: relative;
+  float: left;
+  height: 12rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.mainContainer .avatarContainer .avatarRow .avatar {
+  position: relative;
+  float: left;
+  height: 9.5rem;
+  width: 9.5rem;
+  border-radius: 50%;
+  margin-top: 0.7rem;
+  margin-left: 0.8rem;
+  cursor: pointer;
+}
+.mainContainer .avatarContainer .avatarRow.showAvatar {
+  display: block;
+}
+.mainContainer .screenTest {
+  position: relative;
+  float: right;
+  right: 16.5rem;
+  margin-top: 15.5rem;
+  line-height: 10rem;
+  height: 35rem;
+  width: 25rem;
+  background: #ffffff;
+}
+.mainContainer .screenTest .name {
+  position: relative;
+  float: left;
+  left: 0.3rem;
+  height: 6rem;
+  width: 20rem;
+  margin-top: 0.5rem;
+}
+.mainContainer .screenTest .editButton {
+  position: relative;
+  float: right;
+  right: 0.3rem;
+  height: 6rem;
+  width: 4rem;
+  background: #000000;
+  margin-top: 0.5rem;
+}
+.chatContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.leftPanel {
+  position: fixed;
+  height: 100%;
+  width: 35rem;
+  background: #34495e;
+}
+.leftPanel .usersOnline {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.leftPanel .usersOnline .profileInfo {
+  position: relative;
+  width: 33rem;
+  height: 8rem;
+  left: 0.8rem;
+  margin-top: 1rem;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.leftPanel .usersOnline .profileInfo .profileImage {
+  position: relative;
+  float: left;
+  height: 6rem;
+  width: 6rem;
+  top: 0.8rem;
+  left: 1rem;
+  background: #ffffff;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.leftPanel .usersOnline .profileInfo .profileName {
+  position: relative;
+  color: #ffffff;
+  line-height: 6rem;
+  padding-top: 0.8rem;
+  font-size: 2rem;
+  margin-left: 10rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.leftPanel .usersOnline .searchBox {
+  position: relative;
+  width: 33rem;
+  height: 6rem;
+  margin-top: 1rem;
+  left: 0.8rem;
+  background: #2c3e50;
+}
+.leftPanel .usersOnline .searchBox .inputBox {
+  position: relative;
+  float: left;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  height: 3.9rem;
+  width: 25rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background: #34495e;
+  border: 0px;
+}
+.leftPanel .usersOnline .searchBox .searchButton {
+  position: relative;
+  float: right;
+  right: 1rem;
+  margin-top: 1.1rem;
+  height: 3.8rem;
+  width: 3rem;
+  background: #2c3e50;
+  color: #ffffff;
+  font-size: 2.5rem;
+  padding-top: 0.5rem;
+  cursor: pointer;
+}
+.leftPanel .usersOnline .usersContainer {
+  position: relative;
+  height: 49rem;
+  bottom: 0;
+  left: 0.8rem;
+  margin-top: 0.1rem;
+  width: 33rem;
+  overflow-y: auto;
+}
+.leftPanel .usersOnline .usersContainer .user {
+  position: relative;
+  float: left;
+  width: 33rem;
+  height: 7rem;
+  margin-top: 0.4rem;
+  background: #2c3e50;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.leftPanel .usersOnline .usersContainer .user .Image {
+  position: relative;
+  float: left;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  top: 0.8rem;
+  left: 1.5rem;
+  border: 2px solid #ffffff;
+}
+.leftPanel .usersOnline .usersContainer .user .Name {
+  position: relative;
+  float: left;
+  font-size: 1.5rem;
+  width: 25rem;
+  line-height: 7rem;
+  left: 2rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+.leftPanel .usersOnline .usersContainer .user .userStatusColor {
+  position: relative;
+  float: right;
+  right: 4rem;
+  padding-top: 1.2rem;
+  line-height: 4rem;
+  font-size: 1.7rem;
+  color: #2ecc71;
+}
+.leftPanel .usersOnline .usersContainer .user .notification {
+  position: absolute;
+  float: right;
+  right: 1rem;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  height: 2rem;
+  width: 1.7rem;
+  color: #ffffff;
+}
+.leftPanel .usersOnline .usersContainer .user:hover {
+  border-left: 0.5rem solid cornflowerblue;
+  background: #34495e;
+  width: 32rem;
+  transition: 0.3s;
+}
+.leftPanel .profileInfoFull {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+}
+.leftPanel .profileInfoFull .profileHeader {
+  position: relative;
+  height: 9.5rem;
+  width: 100%;
+  background: #2c3e50;
+}
+.leftPanel .profileInfoFull .profileHeader .backButton {
+  position: relative;
+  float: left;
+  left: 2rem;
+  margin-top: 5rem;
+  height: 3rem;
+  width: 3rem;
+  color: #ffffff;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.leftPanel .profileInfoFull .profileHeader .headerText {
+  position: relative;
+  float: left;
+  line-height: 10rem;
+  color: #ffffff;
+  font-size: 3rem;
+}
+.leftPanel .profileInfoFull .imageBlock {
+  position: relative;
+  height: 25rem;
+  width: 100%;
+  background: #34495e;
+  margin-top: 2rem;
+}
+.leftPanel .profileInfoFull .imageBlock .profileImage {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background: #2c3e50;
+  margin-left: 7rem;
+  line-height: 25rem;
+  margin-top: 2.5rem;
+  border: 2px solid #ffffff;
+}
+.leftPanel .profileInfoFull .yourName {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  background: #2c3e50;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #ffffff;
+  line-height: 10rem;
+  text-align: justify;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+.leftPanel .profileInfoFull .status {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  background: #2c3e50;
+  margin-top: 4rem;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: justify;
+  font-family: sans-serif;
+}
+.chatPanel {
+  position: relative;
+  float: left;
+  left: 35rem;
+  height: 100%;
+  width: 95rem;
+  overflow: hidden;
+  background: url('../images/bg.png');
+}
+.chatPanel .userInfo2 {
+  position: relative;
+  margin-top: 0rem;
+  height: 9rem;
+  width: 100%;
+  background: #ededed;
+  cursor: pointer;
+  display: none;
+}
+.chatPanel .userInfo2 .userImage {
+  position: relative;
+  float: left;
+  height: 7rem;
+  width: 7rem;
+  margin-top: 0.75rem;
+  margin-left: 0.75rem;
+  border: 0.2rem solid #ffffff;
+  border-radius: 50%;
+}
+.chatPanel .userInfo2 .userName {
+  position: relative;
+  line-height: 6rem;
+  font-size: 2.5rem;
+  padding-left: 12rem;
+  padding-top: 1rem;
+  color: #000000;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+.chatPanel .chatBoxWindow {
+  position: absolute;
+  float: left;
+  width: 100%;
+  height: 49.2rem;
+  background: url("../images/chatBg.jpg");
+  overflow-y: auto;
+  display: none;
+}
+.chatPanel .chatBoxWindow .senderContainer {
+  display: block;
+  position: relative;
+  padding-top: 0.70rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  background: #d7f2ed;
+  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  clear: both;
+  max-width: 45rem;
+  font-size: 1.7rem;
+  float: right;
+  margin-right: 6rem;
+  transition: 0.5s;
+  box-shadow: 4px 4px 23px 0px rgba(49, 50, 50, 0.6);
+}
+.chatPanel .chatBoxWindow .senderContainer .senderMessage {
+  height: auto;
+  width: auto;
+  margin: 1.5rem;
+  float: right;
+  right: 0rem;
+  font-family: sans-serif;
+}
+.chatPanel .chatBoxWindow .senderContainer .senderMessage .senderName {
+  position: relative;
+  font-size: 2rem;
+  color: cornflowerblue;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.chatPanel .chatBoxWindow .senderContainer .senderMessage .message {
+  position: relative;
+  text-align: justify;
+}
+.chatPanel .chatBoxWindow .reciverContainer {
+  display: block;
+  position: relative;
+  float: left;
+  padding-top: 0.70rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #ffffff;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-left: 6rem;
+  clear: both;
+  max-width: 45rem;
+  font-size: 1.7rem;
+  transition: 0.5s;
+  color: #000000;
+  box-shadow: 4px 4px 23px 0px rgba(49, 50, 50, 0.6);
+}
+.chatPanel .chatBoxWindow .reciverContainer .reciverMessage {
+  height: auto;
+  width: auto;
+  margin-left: 1.5rem;
+  font-family: sans-serif;
+}
+.chatPanel .chatBoxWindow .reciverContainer .reciverMessage .reciverName {
+  position: relative;
+  font-size: 2rem;
+  color: blue;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.chatPanel .chatBoxWindow .reciverContainer .reciverMessage .message {
+  position: relative;
+  text-align: justify;
+}
+.chatPanel .userFullInfoContainer {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 48.5rem;
+  background: #34495e;
+  display: none;
+}
+.chatPanel .userFullInfoContainer .userInfoBlock {
+  position: relative;
+  float: left;
+  width: 70rem;
+  height: 40rem;
+  background: #2c3e50;
+  margin-top: 4rem;
+  margin-left: 12rem;
+}
+.chatPanel .userFullInfoContainer .userInfoBlock .imageContainer {
+  position: relative;
+  float: left;
+  margin-top: 5rem;
+  height: 30rem;
+  width: 23rem;
+  margin-left: 1.5rem;
+  background: #34495e;
+}
+.chatPanel .userFullInfoContainer .userInfoBlock .imageContainer .image {
+  position: relative;
+  margin-top: 5rem;
+  margin-left: 1.5rem;
+  height: 20rem;
+  width: 20rem;
+  background: #2c3e50;
+  border-radius: 50%;
+}
+.chatPanel .userFullInfoContainer .userInfoBlock .imageContainer .image:hover {
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.1;
+}
+.chatPanel .userFullInfoContainer .userInfoBlock .infoContainer {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 42.5rem;
+  margin-left: 1.5rem;
+}
+.chatPanel .userFullInfoContainer .userInfoBlock .infoContainer .name {
+  position: relative;
+  width: 100%;
+  height: 8rem;
+  background: #34495e;
+  margin-top: 5rem;
+}
+.chatPanel .userFullInfoContainer .userInfoBlock .infoContainer .status {
+  position: relative;
+  margin-top: 3rem;
+  width: 100%;
+  height: 8rem;
+  background: #34495e;
+}
+.chatPanel .userFullInfoContainer .userInfoBlock .infoContainer .mute {
+  position: relative;
+  margin-top: 3rem;
+  width: 100%;
+  height: 8rem;
+  background: #34495e;
+}
+.chatPanel .userFullInfoContainer .closeButton {
+  position: relative;
+  float: left;
+  margin-top: 4rem;
+  height: 5rem;
+  width: 5rem;
+  background: #2c3e50;
+  font-size: 4rem;
+  padding-left: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+.chatPanel .userFullInfoContainer.showInfo {
+  display: block;
+}
+.chatPanel .messageBox {
+  position: absolute;
+  width: 100%;
+  height: 8rem;
+  background: #ededed;
+  bottom: 0rem;
+  display: none;
+}
+.chatPanel .messageBox .textBox {
+  position: relative;
+  float: left;
+  height: 6rem;
+  width: 85rem;
+  margin-top: 0.8rem;
+  margin-left: 0.8rem;
+}
+.chatPanel .messageBox .textBox textarea {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  resize: none;
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #6C7A89;
+}
+.chatPanel .messageBox .sendButton {
+  position: relative;
+  float: right;
+  right: 0.5rem;
+  margin-top: 0.8rem;
+  margin-right: 0.8rem;
+  padding-left: 0.5rem;
+  padding-top: 0.4rem;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background: #2c3e50;
+  font-size: 3.5rem;
+  color: #ecf0f1;
+  cursor: pointer;
+}
+.iconImage {
+  position: absolute;
+  padding-top: 10%;
+  font-size: 1rem;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}

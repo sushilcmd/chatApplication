@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>chat window</title>
+    <link rel="stylesheet" type="text/css" href="../css/screen.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="mainContainer">
+        <div class="loginSection">
+            <div class="realBoxSection">
+                <div class="logo">
+                    <img src="images/logo.png" class="logoImage">
+                </div>
+                <div class="textRealBox">
+                    <font class="text">
+                        2017<br> Real Solution in Box
+                    </font>
+                </div>
+            </div>
+
+            <!--userInfo start here-->
+
+            <div class="userInfo">
+                <div class="userImageScreen">
+                    <div class="userProfileImg">
+                        <img src="images/user.png" class="userImage">
+                    </div>
+                </div>
+
+                <div class="screens">
+                    <!--script template-->
+                </div>
+
+            </div>
+            <!--userInfo closed here-->
+
+
+            <!--avatar html start here-->
+            <div class="avatarContainer">
+                <div class="avatarRow">
+                    <img src="../images/avatar/b1.png" class="avatar">
+                    <img src="../images/avatar/b2.png" class="avatar">
+                    <img src="../images/avatar/b3.png" class="avatar">
+
+                </div>
+                <div class="avatarRow">
+                    <img src="../images/avatar/b4.png" class="avatar">
+                    <img src="../images/avatar/b5.png" class="avatar">
+                    <img src="../images/avatar/b6.png" class="avatar">
+                </div>
+                <div class="avatarRow">
+                    <img src="../images/avatar/b7.png" class="avatar">
+                    <img src="../images/avatar/g4.png" class="avatar">
+                    <img src="../images/avatar/g3.png" class="avatar">
+                </div>
+
+            </div>
+
+            <!--avatar html closed here-->
+        </div>
+
+
+        <div class="detailsContainer">
+            <!--script template-->
+        </div>
+    </div>
+
+
+    <div class="chatContainer">
+        <div class="leftPanel">
+            <div class="usersOnline">
+                <div class="profileInfo">
+                    <!--script template-->
+                </div>
+                <div class="searchBox">
+                    <input type="text" class="inputBox" id="searchString" placeholder="Search or Start New Chat">
+                    <div class="searchButton" id="search">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <!--<input type="button" id="search" value="search">-->
+                </div>
+
+                <div class="usersContainer">
+                    <!--<div id="userList"></div>-->
+                </div>
+            </div>
+
+
+
+            <div class="profileInfoFull">
+                <!--script template profileInfoFull-->
+            </div>
+
+        </div>
+        <div class="chatPanel">
+            <div class="userInfo2">
+                <img src="images/user1.jpg" class="userImage">
+                <div class="userName"></div>
+            </div>
+
+            <div class="chatBoxWindow">
+                <!--message view send and recive-->
+            </div>
+
+            <div class="userFullInfoContainer">
+                <div class="userInfoBlock">
+                    <div class="imageContainer">
+                        <img src="images/user1.jpg" class="image">
+                    </div>
+                    <div class="infoContainer">
+                        <div class="name"></div>
+                        <div class="status"></div>
+                        <div class="mute"></div>
+                    </div>
+                </div>
+                <div class="closeButton">
+                    <i class="fa fa-close"></i>
+                </div>
+            </div>
+
+            <div class="messageBox">
+                <div class="textBox">
+                    <textarea placeholder="type ur text here" class="textArea"></textarea>
+                </div>
+                <div class="sendButton" onclick="sendMessage(this)">
+                    <i class="fa fa-send-o"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script id="screen1Template" type="text/x-jsrender">
+    <div class="name">
+        <div class="screen ">
+            <div class="textBox">
+                <input type="text" placeholder="Enter Your Name" class="inputBox" required>
+            </div>
+            <div class="enterButton">
+                <div class="nextScreen">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+
+                </div>
+                <div class="previousScreen">
+                    <i class="fa fa-arrow-circle-o-left"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="screen2Template" type="text/x-jsrender">
+    <div class="age">
+        <div class="screen">
+            <div class="textBox">
+                <input type="text" placeholder="Enter Your Age" class="inputBox" required>
+            </div>
+            <div class="enterButton">
+                <div class="nextScreen">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+
+                </div>
+                <div class="previousScreen">
+                    <i class="fa fa-arrow-circle-o-left"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="screen3Template" type="text/x-jsrender">
+    <div class="school">
+        <div class="screen">
+            <div class="textBox">
+                <input type="text" placeholder="Enter Your School" class="inputBox" required>
+            </div>
+            <div class="enterButton">
+                <div class="nextScreen">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+
+                </div>
+                <div class="previousScreen">
+                    <i class="fa fa-arrow-circle-o-left"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="screen4Template" type="text/x-jsrender">
+    <div class="city">
+        <div class="screen">
+            <div class="textBox">
+                <input type="text" placeholder="Enter Your City" class="inputBox" required>
+            </div>
+            <div class="enterButton">
+                <div class="nextScreen">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                </div>
+                <div class="previousScreen">
+                    <i class="fa fa-arrow-circle-o-left"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script id="finishContainerTemplate" type="text/x-jsrender">
+    <div class="finish">
+        <div class="screen">
+            <div class="successfullMessage">
+                <div class="icon">
+                    <i class="fa fa-check-circle"></i>
+                </div>
+            </div>
+            <div class="enterButton">
+                <div class="enterText">Start Chat Now</div>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+
+<script id="detailsTemplate" type="text/x-jsrender">
+    <div class="details">
+        <div class="detailsStrip">
+            Details
+        </div>
+        <div class="info">
+            <div class="infoEditInner name">
+                <div class="infoData name">{{>userName}}</div>
+                <div class="infoEditButton name">
+                    <i class="fa fa-pencil"></i>
+                </div>
+            </div>
+            <div class="infoUpdateInner name">
+                <div class="infoUpdateData">
+                    <input class="inputUpdate name" type="text" placeholder="enter name">
+                </div>
+                <div class="infoUpdateButton name">
+                    <i class="fa fa-check"></i>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="infoEditInner age">
+                <div class="infoData age">{{>userAge}}</div>
+                <div class="infoEditButton age">
+                    <i class="fa fa-pencil"></i>
+                </div>
+            </div>
+            <div class="infoUpdateInner age">
+                <div class="infoUpdateData">
+                    <input class="inputUpdate age" type="text" placeholder="enter age">
+                </div>
+                <div class="infoUpdateButton age">
+                    <i class="fa fa-check"></i>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="infoEditInner school">
+                <div class="infoData school">{{>userSchool}}</div>
+                <div class="infoEditButton school">
+                    <i class="fa fa-pencil"></i>
+                </div>
+            </div>
+            <div class="infoUpdateInner school">
+                <div class="infoUpdateData">
+                    <input class="inputUpdate school" type="text" placeholder="enter school">
+                </div>
+                <div class="infoUpdateButton school">
+                    <i class="fa fa-check"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="infoEditInner city">
+                <div class="infoData city">{{>userCity}}</div>
+                <div class="infoEditButton city">
+                    <i class="fa fa-pencil"></i>
+                </div>
+            </div>
+            <div class="infoUpdateInner city">
+                <div class="infoUpdateData">
+                    <input class="inputUpdate city" type="text" placeholder="enter City">
+                </div>
+                <div class="infoUpdateButton city">
+                    <i class="fa fa-check"></i>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</script>
+
+<script id="profileDataTemplate" type="text/x-jsrender">
+    <img src="{{>imageUrl}}" class="profileImage">
+    <div class="profileName">{{>userName}}</div>
+</script>
+
+<script type="text/x-jsrender" id="profileInfoFullTemplate">
+    <div class="profileHeader">
+        <div class="backButton">
+            <i class="fa fa-arrow-left"></i>
+        </div>
+    </div>
+    <div class="imageBlock">
+        <img src="{{>imageUrl}}" class="profileImage">
+    </div>
+    <div class="yourName">{{>userName}}</div>
+    <div class="status">Your Status</div>
+    </div>
+</script>
+
+
+<script id="userTemplate" type="text/x-jsrender">
+    <div class="user">
+        <img src="{{>profileImage}}" data-image="{{>profileImage}}" class="Image">
+        <div class="Name" data-id="{{>profileId}}" name="{{>profileName}}" onclick="showchatPanel(this)">{{>profileName}}</div>
+        <div class="userStatusColor">
+            <i class="fa fa-circle"></i>
+        </div>
+        <div class="notification">
+            <span class="{{>profileId}}">{{if counter != 0}}{{>counter}}{{/if}}</span>
+        </div>
+    </div>
+</script>
+
+<script id="messageTemplate" type="text/x-jsrender">
+    <div class="{{>show}}">
+        {{>message}}
+    </div>
+</script>
+
+
+<script src="../socket.io/socket.io.js "></script>
+<script src="../scripts/jquery.js" type="text/javascript"></script>
+<script src="../scripts/jsrender.js" type="text/javascript"></script>
+<script src="../scripts/jsviews.js" type="text/javascript"></script>
+<script src="../js/baseSushil.js" type="text/javascript"></script>
+<script src="../js/index.js" type="text/javascript"></script>
+
+</html>

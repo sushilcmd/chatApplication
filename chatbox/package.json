@@ -1,0 +1,15 @@
+{
+  "name": "chatbox",
+  "version": "0.0.0",
+  "description": "chatbox application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sushil kumar singh",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "socket.io": "~1.7.2",
+    "express": "~4.10.2"
+  }
+}
